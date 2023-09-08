@@ -1,0 +1,54 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+
+###
+GET http://localhost:3000/user/following/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+
+###
+GET http://localhost:3000/user/followers/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+###
+GET http://localhost:3000/tweets/2/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+###
+GET http://localhost:3000/tweets/2/likes/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+###
+GET http://localhost:3000/tweets/2/replies/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+###
+GET http://localhost:3000/user/tweets/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+###
+POST http://localhost:3000/user/tweets/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+###
+DELETE http://localhost:3000/tweets/5/
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5MTMzfQ.E7OyEOjOPYf3US8IyX40P99rm2L4sd68NZ4cyDn2mBQ
+###
+{"jwtToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk0MTg5Mjg2fQ.V6amzFvQNzvYJ9QdW5fY-mGlCwkAaZHZtnsyX_LHlUk"}
